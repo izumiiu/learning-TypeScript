@@ -1,18 +1,21 @@
-let amount= 31;
-let result:string;
-let total:string;
 
+let options:number;
+let balance:number;
 
-if(amount % 2 == 0){
-    result = "Even"
+balance = 500;
+options = 4;
+
+switch(options){
+    case 1:
+        console.log(`Your balance is ${balance}`);
+        break;
+    case 2: 
+        console.log(`how much you wan tot deposit`);
+        break;
+    case 3:
+        console.log(`You widthdraw`);
+        break;
+    default:
+        console.log("invalid option");
+        break;
 }
-else{
-    result = "Odd";
-}
-console.log(result);
-
-// Ternary
-console.log((amount % 2 == 0) ? `the number${amount} is Even` : `the number${amount} is odd`);
-
-total = (amount % 2 == 0) ? "เลขคู่" : "เลขคี่";
-console.log(total);

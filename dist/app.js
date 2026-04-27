@@ -1,17 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let amount = 31;
-let result;
-let total;
-if (amount % 2 == 0) {
-    result = "Even";
+let options;
+let balance;
+balance = 500;
+options = 4;
+switch (options) {
+    case 1:
+        console.log(`Your balance is ${balance}`);
+        break;
+    case 2:
+        console.log(`how much you wan tot deposit`);
+        break;
+    case 3:
+        console.log(`You widthdraw`);
+        break;
+    default:
+        console.log("invalid option");
+        break;
 }
-else {
-    result = "Odd";
-}
-console.log(result);
-// Ternary
-console.log((amount % 2 == 0) ? `the number${amount} is Even` : `the number${amount} is odd`);
-total = (amount % 2 == 0) ? "เลขคู่" : "เลขคี่";
-console.log(total);
 //# sourceMappingURL=app.js.map
